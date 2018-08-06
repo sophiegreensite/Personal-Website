@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123398019-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123398019-1');
+  </script>
+  <script>
+    window.onload = function () {
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal 
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    };
+  </script>
+
+
+  <meta charset="UTF-8">
+  <title>Sophie's Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://use.typekit.net/kmb0sty.css">
+</head>
+
+<body>
+
+  <!-- Tab links -->
+  <div class="tab">
+    <a href="index.html">
+      <button class="tablinks" onclick="">Home</button>
+      <a href="projects.html">
+        <button class="tablinks" onclick="">Projects</button>
+      </a>
+  </div>
+
+  <!-- Tab content -->
+  <div class="ProjectsTitle">
+    <h3>Projects</h3>
+  </div>
+  <div class="ProjectDescription" <p>A glimpse of personal projects I've made in my free time😊 </p>
+  </div>
+
+  <!-- Trigger/Open The Modal -->
+  <!-- <button id="myBtn">Open Modal</button> -->
+
+  <img class="img-bcard" id="myBtn" alt="Business Card" src="images/businesscard.png"></img>
+
+  <div class="modalDescription">
+    <p>Business card made in Adobe Illustrator</p>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img class="img-bcard-modal" alt="Business Card" src="images/businesscard.png"></img>
+    </div>
+
+  </div>
+
+  <!--Footer Social Stuff-->
+  <div class="icons">
+    <a href="https://twitter.com/sophiegreensite" <i class="fa fa-twitter-square" style="font-size:36px">
+      </i>
+    </a>
+
+    <a href="https://facebook.com/sophie.greensite" </a>
+      <i class="fa fa-facebook-square" style="font-size: 36px"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/sophiegreensite/" </a>
+      <i class="	fa fa-linkedin-square" style="font-size: 36px"></i>
+    </a>
+
+    <a href="https://www.instagram.com/sophiegreensite/" <i class="fa fa-instagram" style="font-size: 36px">
+      </i>
+    </a>
+
+    <a href="https://medium.com/@sophiegreensite" <i class="fa fa-medium" style="font-size: 36px">
+      </i>
+    </a>
+
+    <p class="footer">Made with ❤️& ☕️ by Sophie Greensite</p>
+  </div>
+</body>
+
+</html>
